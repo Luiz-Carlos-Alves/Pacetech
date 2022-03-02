@@ -1,8 +1,8 @@
 algoritmo "AJUDA PARA CLIENTE VIAJAR"
-// Função :Ajudar o cliente na sua viagem convertendo moeda e temperatura.
+// FunÃ§Ã£o :Ajudar o cliente na sua viagem convertendo moeda e temperatura.
 // Autor :Luiz Carlos Alves
 // Data : 02/03/2022
-// Não consegui pedir para o cliente se ele deseja fazer nova conversão.
+// NÃ£o consegui pedir para o cliente se ele deseja fazer nova conversÃ£o.
 
 var
 
@@ -12,15 +12,15 @@ var
 inicio
 
 repita
-      escreval ("[1]Para temperatura de °C para °F ")
-      escreval ("[2]Para temperatura °F para °C ")
-      escreval ("[3]Para Converter Reais para Dólar")
-      escreval ("[4]Para Converter Dólar para Reais")
+      escreval ("[1]Para temperatura de Â°C para Â°F ")
+      escreval ("[2]Para temperatura Â°F para Â°C ")
+      escreval ("[3]Para Converter Reais para DÃ³lar")
+      escreval ("[4]Para Converter DÃ³lar para Reais")
       escreval ("[5]Para Ver o Resultado ")
       leia (opcao)
 
         caso 1
-            escreva ("Qual é a temperatura atual? ")
+            escreva ("Qual Ã© a temperatura atual? ")
             leia (temp)
             tempfah <- (temp * 1.8) + 32
             escreva ("Deseja fazer nova [S]")
@@ -33,11 +33,11 @@ repita
       
 ate opcao = "5"
              escreval ("********************************")
-             escreval ("AQUI ESTÃO SUAS INFORMAÇÕES")
+             escreval ("AQUI ESTÃƒO SUAS INFORMAÃ‡Ã•ES")
              escreval ("********************************")
 
-             escreval ("A Temperatura é de:", tempfah, "°F")
-             //escreval ("A Temperatura é de:", tempcel,"°C")
+             escreval ("A Temperatura Ã© de:", tempfah, "Â°F")
+             //escreval ("A Temperatura Ã© de:", tempcel,"Â°C")
              //escreval ("Voce possui U$: ", totdolar)
              //escreval ("Voce possui R$: ", Quantidadereais)
 
