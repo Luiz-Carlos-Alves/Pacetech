@@ -1,0 +1,74 @@
+
+package desafiopacetech;
+
+import java.util.Scanner;
+
+public class DesafioPacetech   {
+
+    
+  
+    public static void main(String[] args) {
+        
+        Scanner leitorScanner = new Scanner(System.in);
+        
+        float Totdolar, tempC, tempF, valordolar,Totreal, valorReal;
+        int opcao;
+        String resp;
+        
+        System.out.println("Qual a cotação do Dólar?");
+        Totdolar = leitorScanner.nextFloat();
+        System.out.println("A cotação do dólar é?" + Totdolar);
+        System.out.println("");
+          
+       
+           
+       System.out.println("1 - Para converter Celsius para Fahreinheit:");
+       System.out.println("2 - Para converter Fhareinheit para Celsius:");
+       System.out.println("3 - Converter Real para Dólar:");
+       System.out.println("4 - Converter Dólar para Real:");
+       System.out.println("5 - Sair:");
+       
+       opcao = leitorScanner.nextInt();
+       
+       switch(opcao){
+                    
+           case 1:
+               System.out.println("Qual é a temperatura em Celsius?");
+               tempC = leitorScanner.nextFloat();
+               
+               tempF = (tempC * 1.8f) + 32;
+               System.out.println("A temperatura em Fahreinheit é de °F " + tempF); 
+            break;
+           
+           case 2:
+               System.out.println("Qual é a temperatura em Fahreinheit?");
+               tempF = leitorScanner.nextFloat();
+               
+               tempC = (tempF - 32) / 1.8f;
+               System.out.println("A temperatura em Celsius é de ° " + tempC);
+            break; 
+            
+           case 3:
+               System.out.println("Quantos reais você possui?");
+               Totreal = leitorScanner.nextFloat();
+               
+               valordolar = Totreal / Totdolar;
+               System.out.println("Você possui o total de U$$ " + valordolar);
+            break;
+            
+           case 4:
+               System.out.println("Quantos dolares você possui?");
+               valordolar = leitorScanner.nextFloat();
+               
+               valorReal = Totdolar * valordolar;
+               System.out.println("Você possui o total de R$ " + valorReal);
+               break;
+               
+           case 5:
+               System.out.println("Boa Viagem");
+               
+               
+       }
+       
+       }
+    }
